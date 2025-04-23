@@ -165,9 +165,9 @@
     <a href="mailto:xinz1848@gmail.com" class="contact-button">发送邮件</a>
     <div style="margin-top: 20px;">
         <!-- QQ (使用QQ官方链接格式) -->
-        <a href="https://wpa.qq.com/msgrd?v=3&uin=3166617436&site=qq&menu=yes" 
+         <a href="javascript:void(0)" 
            style="color: var(--apple-blue); margin: 0 10px;"
-           target="_blank">QQ</a>
+           onclick="showQR('qqQR')">QQ</a>
         
         <!-- GitHub (直接链接到你的个人主页) -->
         <a href="https://github.com/super-xinz" 
@@ -183,6 +183,18 @@
     </div>
 </body>
 </html>
+
+<div id="qqQR" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
+    <div style="background:white; padding:20px; border-radius:12px; text-align:center;">
+        <p>扫码添加我的QQ</p>
+        <img src="https://pic4.zhimg.com/100/v2-1e802a3e4b424ea861d5b069e1757d3b_qhd.jpg" width="200" style="display:block; margin:10px auto;">
+        <p style="color:#666; font-size:14px;">或直接搜索QQ号: 3166617436</p>
+        <button onclick="hideAllQR()" 
+                style="margin-top:15px; padding:8px 16px; background:var(--apple-blue); color:white; border:none; border-radius:6px; cursor:pointer;">
+            关闭
+        </button>
+    </div>
+</div>
 
 <div id="wechatQR" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1000; justify-content:center; align-items:center;">
     <div style="background:white; padding:20px; border-radius:12px; text-align:center;">
